@@ -39,14 +39,14 @@ class Auto:
 
 class Motor:
      pass
-     def __init__ (self, numeroCilindros, Tipo, registro):
-         self.Tipo = Tipo
+     def __init__ (self, numeroCilindros, tipo, registro):
+         self.tipo = tipo
          self.numeroCilindros = numeroCilindros
          self.registro = registro
 
      def cambiarRegistro(self, registro):
          self.registro = registro
 
-     def asignarTipo(self, Tipo):
-         if Tipo == "gasolina" or tipo == "electrico":
-             self.tipo = Tipo 
+     def asignarTipo(self, tipo):
+         if tipo == "gasolina" or tipo == "electrico":
+             self.tipo = tipo 
