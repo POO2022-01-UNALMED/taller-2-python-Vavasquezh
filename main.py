@@ -20,7 +20,7 @@ class Auto:
 
      def cantidadAsientos(self):
          contador = 0
-         if None != sel.asientos:
+         if sel.asientos != None:
            for asientos in self.asientos:
              if asientos != None:
                contador += 1
