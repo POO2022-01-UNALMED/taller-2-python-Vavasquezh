@@ -41,7 +41,7 @@ class Motor:
      pass
      def __init__ (self, numerocilindros, Tipo, registro):
          self.Tipo = Tipo
-         self.ncilindros = ncilindros
+         self.numeroCilindros = numeroCilindros
          self.registro = registro
 
      def cambiarRegistro(self, registro):
