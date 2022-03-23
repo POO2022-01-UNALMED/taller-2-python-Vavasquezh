@@ -38,7 +38,7 @@ class Auto:
        return m_2
 
 class motor:
-    pass
+     pass
      def __init__ (self, ncilindros, tipo, registro):
          self.tipo = tipo
          self.ncilindros = ncilindros
