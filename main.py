@@ -5,7 +5,7 @@ class Asiento:
         self.precio = precio 
         self.registro = registro
 
-     def Ccolor(self,color):
+     def cambiarColor(self,color):
          if color == "rojo" or color == "verde" or color == "amarillo"or color == "negro"or color == "blanco":
               self.color = color 
 
@@ -19,7 +19,7 @@ class Auto:
         self.motor = motor
         self.registro = registro
 
-     def cantAsientos(self):
+     def cantidadAsientos(self):
          contador = 0
          if sel.asientos != None:
            for asientos in self.asientos:
@@ -27,7 +27,7 @@ class Auto:
                contador += 1
          return contador
 
-     def verintegridad(self):
+     def verificarintegridad(self):
        m_1 = "Auto original"
        m_2 = "Las piezas no son originales"
        if self.registro == self.asientos[0].registro:
@@ -37,16 +37,16 @@ class Auto:
            return m_2 
        return m_2
 
-class motor:
+class Motor:
      pass
-     def __init__ (self, ncilindros, tipo, registro):
-         self.tipo = tipo
+     def __init__ (self, numerocilindros, tipo, registro):
+         self.Tipo = Tipo
          self.ncilindros = ncilindros
          self.registro = registro
 
-     def Cregistro(self, registro):
+     def cambiarRegistro(self, registro):
          self.registro = registro
 
-     def Asigtipo(self, tipo):
-         if tipo == "gasolina" or tipo == "electrico":
-             self.tipo = tipo 
+     def asignarTipo(self, tipo):
+         if Tipo == "gasolina" or tipo == "electrico":
+             self.tipo = Tipo 
