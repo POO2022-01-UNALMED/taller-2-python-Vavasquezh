@@ -27,7 +27,7 @@ class Auto:
                contador += 1
          return contador
 
-     def verificarintegridad(self):
+     def verificarIntegridad(self):
        m_1 = "Auto original"
        m_2 = "Las piezas no son originales"
        if self.registro == self.asientos[0].registro:
